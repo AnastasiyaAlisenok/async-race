@@ -1,0 +1,20 @@
+@import './scss/default_variables.scss';
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: $background-color;
+    background: linear-gradient(4deg, #020024 0%, #3b0767 95%, #400864fd 100%);
+    .page__winners{
+        display: none;
+        &.visible {
+            display: block;
+        }
+    }
+    .page__garage {
+        display: none;
+        &.visible {
+            display: block;
+        }
+    }
+}
