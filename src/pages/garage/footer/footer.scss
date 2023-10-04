@@ -1,0 +1,41 @@
+@import '../../../scss/default_variables.scss';
+
+.footer {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    color: $cars-font-color;
+      .git {
+        &__img {
+          position: relative;
+          width: 30px;
+          height: 30px;
+          z-index: 20;
+          background-image: url('../../../assets/img/git.png');
+          background-size: cover;
+          &:hover {
+            transform: scale(1.1);
+            transition: .3s;
+          }
+        }
+      }
+      .year {
+        font-weight: 700;
+      }
+      .rss {
+        &__img {
+          position: relative;
+          width: 70px;
+          height: 30px;
+          z-index: 20;
+          background-image: url('../../../assets/img/rsschool.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          &:hover {
+            transform: scale(1.1);
+            transition: .3s;
+          }
+        }
+      }
+  }
