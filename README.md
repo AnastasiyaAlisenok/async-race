@@ -53,6 +53,10 @@ npm install
 
 npm run dev
 
+Ссылка на деплой: 
+
+https://anastasiyaalisenok-async-race.netlify.app
+
 Ссылка на репозиторий с API:
 
 https://github.com/mikhama/async-race-api
