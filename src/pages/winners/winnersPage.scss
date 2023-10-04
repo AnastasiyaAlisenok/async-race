@@ -1,0 +1,86 @@
+@import '../../scss/default_variables.scss';
+.page__winners {
+    padding: 0 20px;
+    .winners__title {
+        margin-top: 20px;
+        color: $cars-font-color;
+        font-size: 36px;
+    }
+    .winners__page-number {
+        color: $cars-font-color;
+    }
+    .table {
+        margin-bottom: 20px;
+	    border: none;
+        &__head-row {
+            & .head-ceil {
+                cursor: pointer;
+                width: 150px;
+                padding: 5px 0;
+                font-weight: bold;
+                text-align: center;
+                border: none;
+                background: #fcfc08;
+                font-size: 16px;
+                .button__arrow {
+                    display: inline-block;
+                    margin-left: 60%;
+                }
+                &:first-child {
+                    border-radius: 8px 0 0 8px;
+                }
+                &:last-child {
+                    width: 200px;
+                    border-radius: 0 8px 8px 0;
+                    .button__arrow {
+                        display: inline-block;
+                        margin-left: 10%;
+                    }
+                }
+            }
+        }
+        &__body-row {
+           .body-ceil {
+            border: none;
+            padding: 5px 10px;
+            vertical-align: top;
+            text-align: center;
+            background-color: #450275;
+            color: $cars-font-color;
+            font-size: 16px;
+            font-weight: 700;
+             & svg {
+                width: 60px;
+                height: 25px;
+            }
+            &:first-child {
+                border-radius: 8px 0 0 8px;
+            }
+            &:last-child {
+                border-radius: 0 8px 8px 0;
+            }
+            }
+        }
+    }
+    .winners__buttons {
+        .button {
+            cursor: pointer;
+            width: 100px;
+            padding: 5px;
+            margin-right: 10px;
+            border: 2px solid $cars-font-color;
+            border-radius: 5px;
+            background-color: $purple-button;
+            color: $cars-font-color;
+            font-weight: 700;
+            &:hover {
+                background-color: $purple-button-hover;
+                transition: .3s;
+            }
+            &:disabled {
+                border: 2px solid $disable-button;
+                color: $disable-button;
+            }
+        }
+    }
+}
