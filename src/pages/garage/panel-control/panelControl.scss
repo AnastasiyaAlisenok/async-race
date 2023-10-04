@@ -1,0 +1,43 @@
+@import '../../../scss/default_variables.scss';
+
+.panel-control {
+    padding: 20px;
+    & .button {
+        cursor: pointer;
+        width: 70px;
+        padding: 5px;
+        border: 2px solid $blue-button;
+        border-radius: 5px;
+        background-color: white;
+        color: $blue-button;
+        font-weight: 700;
+    &:hover {
+        color: #260db692;
+        transition: .3s;
+    }
+    }
+    .panel {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .buttons {
+        display: flex;
+        gap: 10px;
+        .button {
+            padding: 5px;
+            border: 2px solid $red-button;
+            color: $red-button;
+            &__generate-cars {
+                width: 150px;
+            }
+            &:hover {
+                color: #d4121290;
+            }
+            &:disabled {
+                border: 1px solid $disable-button;
+                color: $disable-button;
+            }
+        }
+    }
+}
