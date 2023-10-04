@@ -1,0 +1,55 @@
+@import '../../../scss/default_variables.scss';
+
+.cars-container {
+    padding: 20px;
+    height: 100%;
+    color: $cars-font-color;
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    &__count-cars {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    &__page {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        &-wrapper {
+            display: flex;
+            margin-top: 30px;
+         }
+        &-title {
+            margin: 0;
+            margin-right: 5px;
+        }
+        &-count {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        &-nav {
+            margin-top: 30px;
+        }
+        & .button {
+            cursor: pointer;
+            width: 70px;
+            padding: 5px;
+            margin-right: 10px;
+            border: 2px solid $blue-button;
+            border-radius: 5px;
+            background-color: white;
+            color: $blue-button;
+            font-weight: 700;
+                &:hover {
+                color: #260db692;
+                transition: .3s;
+                }
+                &:disabled {
+                    border: 1px solid $disable-button;
+                    color: $disable-button;
+                }
+        }
+    }
+
+}
